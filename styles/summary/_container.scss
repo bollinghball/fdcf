@@ -1,0 +1,8 @@
+@mixin base() {
+    background-color: #333;
+    display: flex;
+}
+
+&__container {
+    @include base;
+}
