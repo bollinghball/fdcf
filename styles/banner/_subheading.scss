@@ -1,0 +1,7 @@
+@mixin base() {
+    margin-top: 25rem;
+}
+
+&__subheading {
+    @include base;
+}
