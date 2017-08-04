@@ -1,5 +1,8 @@
 @mixin base() {
-    width: 50rem;
+
+    @media all and (min-width: 768px) {
+        width: 50rem;
+    }
 }
 
 &__form {

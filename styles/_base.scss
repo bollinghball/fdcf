@@ -72,17 +72,23 @@ h1 {
 }
 
 .active + .coaches__description {
-  width: 100rem;
-      height: 50rem;
+    width: 40rem;
+    height: 35rem;
     border-bottom: 7px solid #111;
     padding: 2rem;
-  @include transition;
+    @include transition;
+  
+  @media all and (min-width: 768px) {
+      height: 50rem;
+      width: 100rem;
+    }
+
 }
 
 .coaches__coach, .coaches__description {
   color: black;
   float:  left;
-  height: 50rem;
+  height: 35rem;
   @include transition;
   background-color: #333;
   width: 40rem;

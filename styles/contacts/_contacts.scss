@@ -1,8 +1,11 @@
 @mixin base() {
     background-color: #626065;
-    padding: 5rem;
-    padding-left: 12rem;
-    padding-right: 12rem;
+
+    @media all and (min-width: 768px) {
+        padding: 5rem;
+        padding-left: 12rem;
+        padding-right: 12rem;
+    }
 }
 
 .contacts {
