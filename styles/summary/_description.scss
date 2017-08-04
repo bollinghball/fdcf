@@ -1,7 +1,11 @@
 @mixin base() {
     margin: 0 auto;
-    padding: 5rem;
+    padding: 3rem;
     text-align: center;
+
+    @media all and (min-width: 768px) {
+        padding: 5rem;
+    }
 }
 
 &__description {

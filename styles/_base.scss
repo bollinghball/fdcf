@@ -85,7 +85,11 @@ h1 {
   height: 50rem;
   @include transition;
   background-color: #333;
-  width: 50rem;
+  width: 40rem;
+
+  @media all and (min-width: 768px) {
+    width: 50rem;
+  }
 
 }
 

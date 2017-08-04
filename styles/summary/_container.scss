@@ -1,6 +1,9 @@
 @mixin base() {
     background-color: #333;
-    display: flex;
+
+    @media all and (min-width: 768px) {
+        display: flex;
+    }
 }
 
 &__container {

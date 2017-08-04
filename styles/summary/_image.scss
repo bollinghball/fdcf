@@ -1,5 +1,9 @@
 @mixin base() {
-    height: 45rem;
+    height: 40rem;
+
+    @media all and (min-width: 768px) {
+        height: 45rem;
+    }
 }
 
 &__image {
