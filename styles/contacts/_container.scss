@@ -1,0 +1,7 @@
+@mixin base() {
+    background-color: #fff;
+}
+
+&__container {
+    @include base;
+}

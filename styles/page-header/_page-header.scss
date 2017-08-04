@@ -1,0 +1,33 @@
+@mixin base() {
+    // background-color: #333;;
+    color: #fff;
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: calc(0px - (100vw - 100%) / 2);
+    margin-right: calc(0px - (100vw - 100%) / 2);
+    max-height: 70px;
+    overflow: hidden;
+    padding: 12px calc(0px + (100vw - 100%) / 2) 0;
+    position: fixed;
+    transition: all 0.3s;
+    width: 100%;
+    z-index: 999;
+
+    @media screen and (min-width: 768px) {
+        align-items: flex-end;
+        padding-bottom: 0;
+        padding-top: 24px;
+    }
+    
+}
+
+.page-header {
+    @include base;
+
+    @import 'branding';
+    @import 'content';
+    @import 'navigation';
+}

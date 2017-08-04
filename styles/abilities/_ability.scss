@@ -1,0 +1,12 @@
+@mixin base() {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 3rem;
+}
+
+&__ability {
+    @include base;
+}

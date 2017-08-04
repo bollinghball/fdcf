@@ -1,0 +1,7 @@
+@mixin base() {
+    width: 75rem;
+}
+
+&__heading {
+    @include base;
+}

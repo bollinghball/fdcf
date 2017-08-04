@@ -1,0 +1,16 @@
+@mixin base() {
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 24px;
+    background-color: #333;
+    color: #fff;
+    left: -2000px;
+    padding: 15px 20px;
+    position: absolute;
+    text-decoration: none;
+    top: 0;
+}
+
+&__link {
+    @include base;
+}

@@ -1,0 +1,12 @@
+@mixin base() {
+    background-color: #fff;
+    border-radius: .2rem;
+    height: 8rem;
+    padding: 1rem;
+    width: 8rem;
+}
+
+&__image {
+    @include base;
+
+}

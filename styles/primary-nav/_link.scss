@@ -1,0 +1,19 @@
+@mixin base() {
+    background-color: initial;
+    color: #fff;
+    display: block;
+    padding: 24px;
+    text-decoration: none;
+
+    @media screen and (min-width: 768px) {
+        font-family: 'Montserrat',"sans-serif";
+        font-size: 1.4rem;
+        line-height: 24px;
+        padding: 16px 16px 20px;
+    }
+}
+
+&__link {
+    @include base;
+
+}

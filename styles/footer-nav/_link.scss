@@ -1,0 +1,13 @@
+@mixin base() {
+    color: rgba(255 , 255, 255, 0.8);
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+&__link {
+    @include base;  
+}

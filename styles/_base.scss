@@ -1,0 +1,110 @@
+@import 'mixins';
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+:first-child {
+    margin-top: 0;
+}
+
+:last-child {
+    margin-top: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 24px;
+    margin:0;
+}
+
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.8rem;
+
+    @media screen and (min-width: 768px) {
+        font-size: 3.2rem;
+    }
+}
+
+.line {
+  height: 10px;
+  border-bottom: 4px solid white;
+  width: 80%;
+  margin: 0 8px;
+  @include transit(0.3s);
+  transform: translate3d(0,20px,0);
+  opacity:0;
+}
+
+.coaches__coach:hover .line {
+  @include transit(0.3s);
+  transform: translate3d(0,0px,0);
+  cursor: pointer;
+  opacity:0.7; 
+}
+
+.coaches__coach:hover {
+  cursor: pointer;
+  opacity:0.7;
+}
+
+
+.active .line {
+  @include transit(0.3s);
+  transform: translate3d(0,0px,0); 
+  opacity:1;
+}
+
+.active {
+  @include transition;
+  opacity: 1;
+  width: 90px;
+}
+
+.active + .coaches__description {
+  width: 100rem;
+  height: 30rem;
+  padding: 10px;
+  @include transition;
+}
+
+.coaches__coach, .coaches__description {
+  color: black;
+  float:  left;
+  height: 50rem;
+  border: 1px solid #fff;
+  @include transition;
+  background-color: #333;
+  width: 50rem;
+
+}
+
+.sticky {
+  background-color: rgba(51, 51, 51, .93);
+  opacity: 1;
+  top: 0px;
+}
+
+.underline {
+  border-bottom: 4px solid #333;
+  margin: 0 auto;
+  margin-top: 2rem;
+  width: 8%;
+
+  &--inverse {
+    border-bottom: 4px solid #fff;
+  margin: 0 auto;
+  margin-top: 2rem;
+  width: 8%;
+  }
+}

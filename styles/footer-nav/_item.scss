@@ -1,0 +1,19 @@
+@mixin base() {
+    font-size: 1.6rem;
+    list-style-type: none;
+    padding: 0;  
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-bottom: 1rem;
+    flex-basis: auto;
+    text-align: center;  
+
+    @media screen and (min-width: 992px) {
+        border-right: 2px solid rgba(255 ,255, 255, 0.2);
+    }
+}
+
+&__item {
+    @include base;
+
+}

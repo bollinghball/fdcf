@@ -1,0 +1,19 @@
+@mixin base() {
+    // height: 35rem;
+    // width: 35rem;
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: 30rem;
+    justify-content: center;
+    opacity: 1;
+    text-align: center;
+    
+}
+
+&__coach {
+    @include base; 
+
+}

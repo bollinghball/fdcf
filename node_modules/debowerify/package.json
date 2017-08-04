@@ -1,0 +1,39 @@
+{
+  "name": "debowerify",
+  "version": "1.5.0",
+  "description": "A browserify transform to enable the easy use of bower components in browserify client javascript projects. This can be used in conjunction with deamdify to require AMD components from bower as well.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eugeneware/debowerify"
+  },
+  "keywords": [
+    "bower",
+    "component",
+    "components",
+    "browserify",
+    "transform"
+  ],
+  "author": "Eugene Ware <eugene@noblesamurai.com>",
+  "license": "BSD",
+  "dependencies": {
+    "bower": "~1.3.12",
+    "esprima": "^2.0.0",
+    "ordered-ast-traverse": "^1.1.1",
+    "through": "~2.3.4"
+  },
+  "devDependencies": {
+    "domready": "~1.0.4",
+    "deamdify": "~0.1.1",
+    "chai": "~1.9.0",
+    "mocha": "^2.1.0",
+    "browserify": "~9.0.0"
+  },
+  "readmeFilename": "README.md",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha"
+  }
+}

@@ -1,0 +1,16 @@
+@mixin base() {
+  background-color: #333;
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 1.75rem;
+  height: 30rem;
+  width: 0;
+  margin: 0;
+  padding: 0;
+  overflow:hidden;
+  @include transition;
+}
+
+&__description {
+    @include base;
+}

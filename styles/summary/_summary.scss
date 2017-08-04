@@ -1,0 +1,12 @@
+@mixin base() {
+    background-color: #626065;
+    padding: 5rem;
+}
+
+.summary {
+    @include base;
+
+    @import 'content';
+    @import 'heading';
+    @import 'description';
+}

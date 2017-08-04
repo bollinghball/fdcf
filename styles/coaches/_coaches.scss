@@ -1,0 +1,39 @@
+@mixin base() {
+    margin-bottom: 15rem;;
+}
+
+.coaches {
+    @include base;
+
+    &__title {
+        color: #fff;
+        font-weight: 600;
+        text-align: center;
+        @include transition;
+    }
+
+    @import 'coach';
+    @import 'image';
+    @import 'heading';
+    @import 'description';
+    @import 'content';
+    @import 'container';
+}
+
+.coach1 {
+    background-image: url("../images/ashley.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.coach2 {
+    background-image: url("../images/marc.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.coach3 {
+    background-image: url("../images/kyle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

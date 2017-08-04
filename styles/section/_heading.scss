@@ -1,0 +1,15 @@
+@mixin base() {
+    text-align: center;
+}
+
+&__heading {
+    @include base;
+
+    &--inverse {
+        background-color: white;
+        color: #333;
+        // margin-bottom: 0;
+        // padding-bottom: 5rem;
+        text-align: center;
+    }
+}

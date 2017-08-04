@@ -1,0 +1,10 @@
+@mixin base() {
+    background-image: url("images/gym2.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+}
+
+&__content {
+    @include base;
+}

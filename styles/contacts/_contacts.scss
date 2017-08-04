@@ -1,0 +1,16 @@
+@mixin base() {
+    background-color: #626065;
+    padding: 5rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
+}
+
+.contacts {
+    @include base;
+
+    @import 'content';
+    @import 'form';
+    @import 'information';
+    @import 'container';
+    @import 'heading';
+}

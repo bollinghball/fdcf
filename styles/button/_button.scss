@@ -1,0 +1,54 @@
+@mixin base() {
+    text-transform: uppercase;
+    border: 3px solid white;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    display: block;
+    width: 250px;
+    margin: 20px auto;
+    margin-top: 25rem;
+
+  text-align: center;
+  
+  transform-style: flat;
+  transition: all 250ms ease-out;
+  
+  &:before,
+  &:after {
+      content: "";
+      position: absolute;
+      z-index: -2;
+    	transition: all 250ms ease-out;
+  }
+
+  
+}
+
+.button {
+    @include base;
+
+    // &--hover {
+    //     @include base;
+        
+
+    // }
+
+}
+
+.content {
+    &:before {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    &:hover {
+        border: 3px solid #fff;
+        
+        &:before {
+                box-shadow: 0 15px 10px -10px rgba(31, 31, 31, 0.5);
+        }
+    }
+}

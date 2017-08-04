@@ -1,0 +1,7 @@
+@mixin base() {
+    width: 50rem;
+}
+
+&__form {
+    @include base;
+}

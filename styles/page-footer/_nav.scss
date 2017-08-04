@@ -1,0 +1,17 @@
+@mixin base() {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+
+    @media all and (min-width: 992px) {
+        flex-wrap: nowrap;
+    }
+}
+
+&__nav {
+    @include base;
+
+}
