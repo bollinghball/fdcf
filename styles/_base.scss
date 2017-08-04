@@ -73,8 +73,9 @@ h1 {
 
 .active + .coaches__description {
   width: 100rem;
-  height: 30rem;
-  padding: 10px;
+      height: 50rem;
+    border-bottom: 7px solid #111;
+    padding: 2rem;
   @include transition;
 }
 
@@ -82,7 +83,6 @@ h1 {
   color: black;
   float:  left;
   height: 50rem;
-  border: 1px solid #fff;
   @include transition;
   background-color: #333;
   width: 50rem;
@@ -103,8 +103,8 @@ h1 {
 
   &--inverse {
     border-bottom: 4px solid #fff;
-  margin: 0 auto;
-  margin-top: 2rem;
-  width: 8%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: 8%;
   }
 }
