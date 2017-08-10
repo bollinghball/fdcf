@@ -1,0 +1,8 @@
+@mixin base() {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+&__heading {
+    @include base;
+}

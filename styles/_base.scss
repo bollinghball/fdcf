@@ -173,3 +173,16 @@ nav .text-menu {
   position: relative;
   width: 100%;
 }
+
+.parallax-two {
+  background-attachment: fixed; 
+  background-size: cover;
+  background-image: url("../images/gym3.JPG");
+  background-repeat: no-repeat; background-position: top center;
+  padding-bottom: 20rem;
+  padding-top: 10rem;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+

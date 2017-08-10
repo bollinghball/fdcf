@@ -1,0 +1,13 @@
+@mixin base() {
+    background-color: #333;
+    color: #fff;
+    padding-bottom: 10rem;
+    text-align: center;
+}
+
+.testimonials {
+    @include base;
+
+    @import 'heading';
+    @import 'content';
+}
