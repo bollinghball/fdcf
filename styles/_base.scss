@@ -118,3 +118,58 @@ h1 {
     width: 8%;
   }
 }
+
+nav .fa {
+    display: none;
+    color: #fff;
+    font-size: 7vh;
+    margin-top: 3.75vh;
+}
+
+nav .text-menu {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-around;
+}
+
+
+@media (max-width: 768px) {
+
+  nav .menu-appear {
+        position: absolute;
+        top: 15vh;
+        transition: 0.5s;
+    }
+    
+    nav .fa {
+        display: block;
+    }
+    nav .text-menu {
+        position: absolute;
+        top: -85vh;
+        left: 0;
+        background: white;
+        width: 100%;
+        height: 85vh;
+        text-align: center;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        z-index: -1;
+    }
+
+    nav .text-menu * {
+        height: 12vh;
+    }
+}
+
+.parallax-one {
+  background-attachment: fixed; 
+  background-size: cover;
+  background-image: url("../images/rings.JPG");
+  background-repeat: no-repeat; background-position: top center;
+  padding-bottom: 20rem;
+  padding-top: 20rem;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}

@@ -13,19 +13,27 @@ $(window).scroll(function() {
 });
 
 // Mobile Navigation
-$('.mobile-toggle').click(function() {
-    if ($('.page-header').hasClass('open-nav')) {
-        $('.page-header').removeClass('open-nav');
-    } else {
-        $('.page-header').addClass('open-nav');
-    }
-});
+// $('.mobile-toggle').click(function() {
+//     if ($('.page-header').hasClass('open-nav')) {
+//         $('.page-header').removeClass('open-nav');
+//     } else {
+//         $('.page-header').addClass('open-nav');
+//     }
+// });
 
-$('.main_h li a').click(function() {
-    if ($('.page-header').hasClass('open-nav')) {
-        $('.primary-nav').removeClass('open-nav');
-        $('.page-header').removeClass('open-nav');
-    }
+// $('.main_h li a').click(function() {
+//     if ($('.page-header').hasClass('open-nav')) {
+//         $('.primary-nav').removeClass('open-nav');
+//         $('.page-header').removeClass('open-nav');
+//     }
+// });
+
+ $('.fa-bars').click(function() {
+        $('.text-menu').toggleClass('menu-appear');
+    });
+
+    $('nav .text-menu a').click(function() {
+        $('.text-menu').toggleClass('menu-appear');
 });
 
 // navigation scroll

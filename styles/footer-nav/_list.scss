@@ -1,11 +1,15 @@
 @mixin base() {
+    align-items: center;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 3rem;
     padding: 0;
 
     @media screen and (min-width: 992px) {
-        justify-content: flex-end;
+        flex-direction: row;
+        margin-top: 0;
     }
 }
 

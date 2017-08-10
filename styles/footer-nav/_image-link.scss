@@ -1,0 +1,16 @@
+@mixin base() {
+    background-color: #fff;
+    border-radius: .5rem;
+    height: 7rem;
+}
+
+&__image-link {
+    @include base;
+
+    &--journal {
+        @include base;
+        
+        height: 6.15rem;
+        margin-bottom: .5rem;
+    }
+}

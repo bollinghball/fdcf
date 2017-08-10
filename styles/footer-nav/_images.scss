@@ -1,0 +1,13 @@
+@mixin base() {
+    align-items: flex-end;
+    display: flex;
+    margin-top: 3rem;
+
+    @media all and (min-width: 992px) {
+        margin-top: 0;
+    }
+}
+
+&__images {
+    @include base;
+}

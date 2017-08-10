@@ -1,0 +1,22 @@
+@mixin base() {
+    border-radius: .5rem;
+    width: 6rem;
+}
+
+&__image {
+    @include base;
+
+    &--journal {
+        @include base;
+        margin-top: 2rem;
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+
+    &--mind {
+        @include base;
+        margin-top: .5rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}

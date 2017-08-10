@@ -1,13 +1,13 @@
 @mixin base() {
-
     color: white;
     font-size: 1.2rem;
-    margin: 0 auto;
+    flex-direction: column;
+    // margin: 0 auto;
     padding: 0;
-    text-align: center;
+    // text-align: center;
     text-decoration: none;
     flex-basis: auto;
-    flex-grow: 1;
+    // flex-grow: 1;
     flex-shrink: 0;
     width: 100%;
     
@@ -16,7 +16,7 @@
     }
 
     @media all and (min-width: 992px) {
-        margin: 0;
+        flex-direction: row;
         text-align: initial;
         width: initial;
     }
@@ -29,4 +29,7 @@
     @import 'item';
     @import 'link';
     @import 'list';
+    @import 'image';
+    @import 'image-link';
+    @import 'images';
 }
