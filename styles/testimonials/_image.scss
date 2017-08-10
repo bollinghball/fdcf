@@ -1,0 +1,9 @@
+@mixin base() {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 5rem;
+}
+
+&__image {
+    @include base;
+}

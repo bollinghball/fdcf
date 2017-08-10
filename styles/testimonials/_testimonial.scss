@@ -1,0 +1,15 @@
+@mixin base() {
+    // background-color: #333;
+    padding: 3rem;
+    width: 40rem;
+    height: 35rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 5px solid #fff;
+}
+
+&__testimonial {
+    @include base;
+}
