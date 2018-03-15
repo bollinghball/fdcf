@@ -1,0 +1,9 @@
+@mixin base() {
+    display: flex;
+    font-weight: 700;
+    justify-content: flex-end;
+}
+
+&__sub-navigation {
+    @include base;
+}

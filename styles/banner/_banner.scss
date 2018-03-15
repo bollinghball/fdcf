@@ -1,18 +1,6 @@
 @mixin base() {
-    background-attachment: fixed;
-    background-color: #333;
-    background-image: url('../images/crossfitgym2.jpg');
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff;
-    height: 100vh;
-    margin-left: calc(0px - (100vw - 100%) / 2);
-    margin-right: calc(0px - (100vw - 100%) / 2);
-    position: relative;
-    padding: 96px calc(0px + (100vw - 100%) / 2) 120px;
-    text-align: center;
-    z-index: 1;
+    
+    margin-top: -3rem;
 }
 
 .banner {

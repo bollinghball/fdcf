@@ -1,5 +1,12 @@
 @mixin base() {
-
+    align-items: center;
+    background-image: url('../images/tireflip.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 75vh;
+    justify-content: flex-end;
 }
 
 .summary {
@@ -10,4 +17,16 @@
     @import 'description';
     @import 'container';
     @import 'image';
+
+}
+
+.summary::before {
+    position: absolute;
+    content: " ";
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: block;
+    background-color: rgba(0,0,0,.5);
+    bottom: -75%;
 }

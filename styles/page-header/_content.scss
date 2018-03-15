@@ -1,0 +1,11 @@
+@mixin base() {
+    align-items: flex-start;
+    display: flex;
+    font-weight: 700;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+&__content {
+    @include base;
+}

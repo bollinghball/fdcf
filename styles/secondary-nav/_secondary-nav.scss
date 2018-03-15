@@ -1,0 +1,12 @@
+@mixin base() {
+    
+}
+
+.secondary-nav {
+    @include base;
+
+    @import 'heading';
+    @import 'item';
+    @import 'list';
+    @import 'link';
+}

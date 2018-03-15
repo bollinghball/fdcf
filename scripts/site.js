@@ -1,8 +1,8 @@
 // Main JS should go here!
-// Include scripts using Browserify by doing:
+// // Include scripts using Browserify by doing:
 var $ = require("jquery");
 
-//Sticky Header
+// //Sticky Header
 $(window).scroll(function() {
 
     if ($(window).scrollTop() > 100) {
@@ -28,15 +28,15 @@ $(window).scroll(function() {
 //     }
 // });
 
- $('.fa-bars').click(function() {
-        $('.text-menu').toggleClass('menu-appear');
-    });
+//  $('.fa-bars').click(function() {
+//         $('.text-menu').toggleClass('menu-appear');
+//     });
 
-    $('nav .text-menu a').click(function() {
-        $('.text-menu').toggleClass('menu-appear');
-});
+//     $('nav .text-menu a').click(function() {
+//         $('.text-menu').toggleClass('menu-appear');
+// });
 
-// navigation scroll
+// // navigation scroll
 $('primary-nav a').click(function(event) {
     var id = $(this).attr("href");
     var offset = 70;
@@ -47,7 +47,7 @@ $('primary-nav a').click(function(event) {
     event.preventDefault();
 });
 
-//expand accordion
+// //expand accordion
 $('.coaches__coach').on('click', function () {
   $(this).siblings().removeClass('active');
   $(this).toggleClass('active');
